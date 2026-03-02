@@ -3,9 +3,7 @@ import React from "react";
 export default function DashboardSection() {
   return (
     <div className="grid grid-cols-2 gap-6 p-6">
-      {/* CARD 1 */}
       <div className="bg-white rounded-2xl p-8 shadow-sm animate-fadeUp">
-        {/* Header */}
         <div className="flex justify-between items-center">
           <h2 className="text-[20px] font-semibold text-[#1e1e1e]">
             Attendance Overview
@@ -15,15 +13,12 @@ export default function DashboardSection() {
           </div>
         </div>
 
-        {/* Content */}
         <div className="flex items-center gap-10 mt-8">
-          {/* Circle */}
           <div className="w-[180px] h-[180px] rounded-full bg-[#eef1ef] flex flex-col items-center justify-center animate-scaleIn">
             <h1 className="text-4xl font-bold">94.2%</h1>
             <p className="text-[#6b6b6b]">Overall</p>
           </div>
 
-          {/* Legend */}
           <div className="flex flex-col gap-4">
             <div className="flex justify-between w-[220px]">
               <div className="flex items-center text-[#444]">
@@ -59,14 +54,12 @@ export default function DashboardSection() {
           </div>
         </div>
 
-        {/* Bottom text */}
         <div className="mt-8">
           <h3 className="font-semibold">Attendance Rate</h3>
           <p className="text-[#6b6b6b]">Current month</p>
         </div>
       </div>
 
-      {/* CARD 2 */}
       <div className="bg-white rounded-2xl p-8 shadow-sm animate-fadeUp delay-200">
         <div className="flex justify-between items-center">
           <h2 className="text-[20px] font-semibold text-[#1e1e1e]">

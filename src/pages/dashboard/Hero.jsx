@@ -13,7 +13,6 @@ import {
 function Hero() {
   return (
     <div className="w-full">
-      {/* TOP SECTION */}
       <div className="flex justify-between items-center mb-8">
         <div className="flex flex-col gap-1.5">
           <h1 className="text-[28px] font-bold text-slate-900">
@@ -42,9 +41,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* CARDS */}
       <div className="grid grid-cols-3 gap-5">
-        {/* Card 1 */}
         <div className="relative bg-white p-6 rounded-2xl shadow-sm flex flex-col gap-2.5">
           <div className="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center">
             <Users size={20} />
@@ -56,7 +53,6 @@ function Hero() {
           </span>
         </div>
 
-        {/* Card 2 */}
         <div className="relative bg-white p-6 rounded-2xl shadow-sm flex flex-col gap-2.5">
           <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center">
             <Building2 size={20} />
@@ -68,7 +64,6 @@ function Hero() {
           </span>
         </div>
 
-        {/* Card 3 */}
         <div className="relative bg-white p-6 rounded-2xl shadow-sm flex flex-col gap-2.5">
           <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
             <Target size={20} />
@@ -104,7 +99,6 @@ function Hero() {
           </span>
         </div>
 
-        {/* Card 6 */}
         <div className="relative bg-white p-6 rounded-2xl shadow-sm flex flex-col gap-2.5">
           <div className="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center">
             <UserMinus size={20} />

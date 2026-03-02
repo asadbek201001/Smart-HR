@@ -10,7 +10,6 @@ import {
   Legend,
 } from "recharts";
 
-/* ================= SAMPLE DATA ================= */
 
 const data = [
   { month: "Jan", total: 1180, hires: 10, departures: 8 },

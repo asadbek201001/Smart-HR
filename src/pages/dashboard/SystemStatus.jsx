@@ -4,7 +4,6 @@ import { Info, ChevronDown } from "lucide-react";
 export default function SystemStatus() {
   return (
     <div className="grid grid-cols-[320px_1fr] gap-6 p-6">
-      {/* SYSTEM STATUS */}
       <div className="bg-white rounded-2xl p-7 shadow-sm">
         <h2 className="text-xl font-semibold mb-6">System Status</h2>
 
@@ -34,7 +33,6 @@ export default function SystemStatus() {
         </div>
       </div>
 
-      {/* PERFORMANCE TABLE */}
       <div className="bg-white rounded-2xl p-7 shadow-sm">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold m-0">Department Performance</h2>
@@ -52,7 +50,6 @@ export default function SystemStatus() {
             <div>Budget Usage</div>
           </div>
 
-          {/* Row 1 */}
           <div className="grid grid-cols-[1.5fr_1fr_1.2fr_1fr_1fr] border-t border-gray-200 py-5 items-center">
             <div className="font-medium">Engineering</div>
             <div>285</div>
@@ -66,7 +63,6 @@ export default function SystemStatus() {
             <div>87%</div>
           </div>
 
-          {/* Row 2 */}
           <div className="grid grid-cols-[1.5fr_1fr_1.2fr_1fr_1fr] border-t border-gray-200 py-5 items-center">
             <div className="font-medium">Sales</div>
             <div>198</div>
@@ -80,7 +76,6 @@ export default function SystemStatus() {
             <div>92%</div>
           </div>
 
-          {/* Row 3 */}
           <div className="grid grid-cols-[1.5fr_1fr_1.2fr_1fr_1fr] border-t border-gray-200 py-5 items-center">
             <div className="font-medium">Marketing</div>
             <div>156</div>
@@ -94,7 +89,6 @@ export default function SystemStatus() {
             <div>78%</div>
           </div>
 
-          {/* Row 4 */}
           <div className="grid grid-cols-[1.5fr_1fr_1.2fr_1fr_1fr] border-t border-gray-200 py-5 items-center">
             <div className="font-medium">Operations</div>
             <div>167</div>
