@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes scaleIn {
+    0% { opacity: 0; transform: scale(0.7); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes rotateIn {
+    0% { opacity: 0; transform: rotate(-180deg); }
+    100% { opacity: 1; transform: rotate(0deg); }
+  }
+  
+  .animate-fadeUp {
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  .animate-scaleIn {
+    animation: scaleIn 0.8s ease forwards;
+  }
+  
+  .animate-rotateIn {
+    animation: rotateIn 1s ease forwards;
+  }
