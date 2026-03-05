@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FiLock } from "react-icons/fi";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    if (
+      (email === "admin@smarthr.com" && password === "admin123") ||
+      (email === "superadmin@smarthr.com" && password === "super123")
+    ) {
+      navigate("/dashboard");
+    } else {
+      alert("Invalid email or password");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#eef1f5] flex items-center justify-center">
       <div className="w-[400px] bg-white p-10 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
@@ -28,6 +44,8 @@ const Login = () => {
           <input
             type="email"
             placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full px-3 py-3 mb-4 rounded-lg border border-gray-200 bg-gray-100 text-sm focus:outline-none focus:border-slate-900 focus:bg-white transition"
           />
 
@@ -37,10 +55,15 @@ const Login = () => {
           <input
             type="password"
             placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             className="w-full px-3 py-3 mb-5 rounded-lg border border-gray-200 bg-gray-100 text-sm focus:outline-none focus:border-slate-900 focus:bg-white transition"
           />
 
-          <button className="w-full py-3 bg-slate-900 text-white rounded-lg text-sm font-semibold flex items-center justify-center gap-2 mb-5 hover:bg-slate-800 transition">
+          <button
+            onClick={handleLogin}
+            className="w-full py-3 bg-slate-900 text-white rounded-lg text-sm font-semibold flex items-center justify-center gap-2 mb-5 hover:bg-slate-800 transition"
+          >
             <FiLock size={16} />
             Sign In
           </button>
